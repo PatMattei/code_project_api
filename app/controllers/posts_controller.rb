@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -46,6 +46,6 @@ class PostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def post_params
-      params.require(:post).permit(:title, :content, :day)
+      params.require(:post).permit(:title, :content, :day, :language, :code)
     end
 end
