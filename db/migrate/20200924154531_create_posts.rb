@@ -3,6 +3,8 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.string :title
       t.string :content
+      t.string :code
+      t.string :language
       t.datetime :day
 
       t.timestamps
